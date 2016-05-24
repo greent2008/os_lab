@@ -1,0 +1,199 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="Makefile"
+    WorkingDir="."
+    BuildSystem=""
+    BuildMakeFile="Makefile">
+    <Config
+        Name="Release"
+        Type="Makefile"
+        OutputFile="lab7"
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine="make -f Makefile all"/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine="make -f Makefile clean all"/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec CmdLine='"lab7.exe"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Files>
+        <Folder
+            Name="Source Files"
+            Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go"
+            GUID="{B4C2E09B-7BB5-40B1-A5C0-E2BA97C7C545}">
+            <F N="user/badarg.c"/>
+            <F N="user/badsegment.c"/>
+            <F N="boot/bootmain.c"/>
+            <F N="kern/sync/check_sync.c"/>
+            <F N="kern/driver/clock.c"/>
+            <F N="kern/driver/console.c"/>
+            <F N="kern/mm/default_pmm.c"/>
+            <F N="kern/schedule/default_sched.c"/>
+            <F N="user/divzero.c"/>
+            <F N="user/exit.c"/>
+            <F N="user/faultread.c"/>
+            <F N="user/faultreadkernel.c"/>
+            <F N="user/forktest.c"/>
+            <F N="user/forktree.c"/>
+            <F N="libs/hash.c"/>
+            <F N="user/hello.c"/>
+            <F N="kern/driver/ide.c"/>
+            <F N="kern/init/init.c"/>
+            <F N="kern/driver/intr.c"/>
+            <F N="kern/debug/kdebug.c"/>
+            <F N="kern/mm/kmalloc.c"/>
+            <F N="kern/debug/kmonitor.c"/>
+            <F N="user/matrix.c"/>
+            <F N="kern/sync/monitor.c"/>
+            <F N="kern/debug/panic.c"/>
+            <F N="user/libs/panic.c"/>
+            <F N="user/pgdir.c"/>
+            <F N="kern/driver/picirq.c"/>
+            <F N="kern/mm/pmm.c"/>
+            <F N="libs/printfmt.c"/>
+            <F N="user/priority.c"/>
+            <F N="kern/process/proc.c"/>
+            <F N="libs/rand.c"/>
+            <F N="kern/libs/readline.c"/>
+            <F N="kern/schedule/sched.c"/>
+            <F N="kern/sync/sem.c"/>
+            <F N="tools/sign.c"/>
+            <F N="user/sleep.c"/>
+            <F N="user/sleepkill.c"/>
+            <F N="user/softint.c"/>
+            <F N="user/spin.c"/>
+            <F N="kern/libs/stdio.c"/>
+            <F N="user/libs/stdio.c"/>
+            <F N="libs/string.c"/>
+            <F N="kern/mm/swap.c"/>
+            <F N="kern/mm/swap_fifo.c"/>
+            <F N="kern/fs/swapfs.c"/>
+            <F N="kern/syscall/syscall.c"/>
+            <F N="user/libs/syscall.c"/>
+            <F N="user/testbss.c"/>
+            <F N="kern/trap/trap.c"/>
+            <F N="user/libs/ulib.c"/>
+            <F N="user/libs/umain.c"/>
+            <F N="tools/vector.c"/>
+            <F N="kern/mm/vmm.c"/>
+            <F N="kern/sync/wait.c"/>
+            <F N="user/waitkill.c"/>
+            <F N="user/yield.c"/>
+        </Folder>
+        <Folder
+            Name="Header Files"
+            Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+            GUID="{10C027FC-AB77-46F5-A3B3-04EB27C5C17E}">
+            <F N="boot/asm.h"/>
+            <F N="kern/debug/assert.h"/>
+            <F N="libs/atomic.h"/>
+            <F N="kern/driver/clock.h"/>
+            <F N="kern/driver/console.h"/>
+            <F N="kern/mm/default_pmm.h"/>
+            <F N="kern/schedule/default_sched.h"/>
+            <F N="libs/defs.h"/>
+            <F N="libs/elf.h"/>
+            <F N="libs/error.h"/>
+            <F N="kern/fs/fs.h"/>
+            <F N="tools/grade.sh"/>
+            <F N="kern/driver/ide.h"/>
+            <F N="kern/driver/intr.h"/>
+            <F N="kern/driver/kbdreg.h"/>
+            <F N="kern/debug/kdebug.h"/>
+            <F N="kern/mm/kmalloc.h"/>
+            <F N="kern/debug/kmonitor.h"/>
+            <F N="libs/list.h"/>
+            <F N="kern/mm/memlayout.h"/>
+            <F N="kern/mm/mmu.h"/>
+            <F N="kern/sync/monitor.h"/>
+            <F N="kern/driver/picirq.h"/>
+            <F N="kern/mm/pmm.h"/>
+            <F N="kern/process/proc.h"/>
+            <F N="kern/schedule/sched.h"/>
+            <F N="kern/sync/sem.h"/>
+            <F N="libs/skew_heap.h"/>
+            <F N="kern/debug/stab.h"/>
+            <F N="libs/stdarg.h"/>
+            <F N="libs/stdio.h"/>
+            <F N="libs/stdlib.h"/>
+            <F N="libs/string.h"/>
+            <F N="kern/mm/swap.h"/>
+            <F N="kern/mm/swap_fifo.h"/>
+            <F N="kern/fs/swapfs.h"/>
+            <F N="kern/sync/sync.h"/>
+            <F N="kern/syscall/syscall.h"/>
+            <F N="user/libs/syscall.h"/>
+            <F N="kern/trap/trap.h"/>
+            <F N="user/libs/ulib.h"/>
+            <F N="libs/unistd.h"/>
+            <F N="kern/mm/vmm.h"/>
+            <F N="kern/sync/wait.h"/>
+            <F N="libs/x86.h"/>
+        </Folder>
+        <Folder
+            Name="Resource Files"
+            Filters="*.ico;*.cur;*.dlg"
+            GUID="{D37503FE-3776-4AC7-AC38-6B45BA8E2DB5}"/>
+        <Folder
+            Name="Bitmaps"
+            Filters="*.bmp"
+            GUID="{E0FF64D2-DB85-4D45-B74A-04BAF4C477C1}"/>
+        <Folder
+            Name="Other Files"
+            Filters=""
+            GUID="{D61E4212-589A-4308-B92E-70DD3BD9EA83}">
+            <F N=".projectile"/>
+            <F N="tools/boot.ld"/>
+            <F N="boot/bootasm.S"/>
+            <F N="kern/init/entry.S"/>
+            <F N="kern/process/entry.S"/>
+            <F N="tools/function.mk"/>
+            <F N="user/libs/initcode.S"/>
+            <F N="tools/kernel.ld"/>
+            <F N="lab7.vpj"/>
+            <F N="lab7.vpw"/>
+            <F N="lab7.vpwhistu"/>
+            <F N="lab7.vtg"/>
+            <F N="kern/process/switch.S"/>
+            <F N="kern/trap/trapentry.S"/>
+            <F N="tools/user.ld"/>
+            <F N="kern/trap/vectors.S"/>
+        </Folder>
+    </Files>
+</Project>
