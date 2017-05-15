@@ -1,0 +1,82 @@
+[
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/init -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/init/init.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/init/init.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/init/init.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/libs -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/libs/stdio.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/libs/stdio.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/libs/stdio.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/libs -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/libs/readline.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/libs/readline.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/libs/readline.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/debug/panic.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug/panic.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug/panic.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/debug/kdebug.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug/kdebug.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug/kdebug.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/debug/kmonitor.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug/kmonitor.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug/kmonitor.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/driver/clock.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/clock.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/clock.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/driver/console.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/console.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/console.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/driver/picirq.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/picirq.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/picirq.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/driver/intr.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/intr.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver/intr.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/trap/trap.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap/trap.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap/trap.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm -o obj/kern/mm/pmm.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm/pmm.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/kern/mm/pmm.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -o obj/libs/string.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs/string.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs/string.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -o obj/libs/printfmt.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs/printfmt.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs/printfmt.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/boot -fno-builtin -Wall -ggdb -m32 -gstabs -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/libs -Os -nostdinc -o obj/boot/bootmain.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/boot/bootmain.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/boot/bootmain.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/tools -g -Wall -O2 -o obj/sign/tools/sign.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/tools/sign.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab1/tools/sign.c"
+    }
+]

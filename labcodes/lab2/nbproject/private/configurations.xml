@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="boot">
+        <in>asm.h</in>
+        <in>bootasm.S</in>
+        <in>bootmain.c</in>
+      </df>
+      <df name="kern">
+        <df name="debug">
+          <in>assert.h</in>
+          <in>kdebug.c</in>
+          <in>kdebug.h</in>
+          <in>kmonitor.c</in>
+          <in>kmonitor.h</in>
+          <in>panic.c</in>
+          <in>stab.h</in>
+        </df>
+        <df name="driver">
+          <in>clock.c</in>
+          <in>clock.h</in>
+          <in>console.c</in>
+          <in>console.h</in>
+          <in>intr.c</in>
+          <in>intr.h</in>
+          <in>kbdreg.h</in>
+          <in>picirq.c</in>
+          <in>picirq.h</in>
+        </df>
+        <df name="init">
+          <in>entry.S</in>
+          <in>init.c</in>
+        </df>
+        <df name="libs">
+          <in>readline.c</in>
+          <in>stdio.c</in>
+        </df>
+        <df name="mm">
+          <in>buddy.c</in>
+          <in>buddy.h</in>
+          <in>default_pmm.c</in>
+          <in>default_pmm.h</in>
+          <in>memlayout.h</in>
+          <in>mmu.h</in>
+          <in>pmm.c</in>
+          <in>pmm.h</in>
+        </df>
+        <df name="sync">
+          <in>sync.h</in>
+        </df>
+        <df name="trap">
+          <in>trap.c</in>
+          <in>trap.h</in>
+          <in>trapentry.S</in>
+          <in>vectors.S</in>
+        </df>
+      </df>
+      <df name="libs">
+        <in>atomic.h</in>
+        <in>defs.h</in>
+        <in>elf.h</in>
+        <in>error.h</in>
+        <in>list.h</in>
+        <in>printfmt.c</in>
+        <in>stdarg.h</in>
+        <in>stdio.h</in>
+        <in>string.c</in>
+        <in>string.h</in>
+        <in>x86.h</in>
+      </df>
+      <df name="tools">
+        <in>sign.c</in>
+        <in>vector.c</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

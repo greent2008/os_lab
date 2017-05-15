@@ -1,0 +1,257 @@
+[
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/init -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/init/init.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/init/init.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/init/init.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/libs/stdio.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs/stdio.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs/stdio.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/libs/readline.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs/readline.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs/readline.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/debug/panic.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug/panic.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug/panic.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/debug/kdebug.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug/kdebug.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug/kdebug.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/debug/kmonitor.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug/kmonitor.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug/kmonitor.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/driver/ide.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/ide.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/ide.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/driver/clock.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/clock.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/clock.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/driver/console.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/console.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/console.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/driver/picirq.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/picirq.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/picirq.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/driver/intr.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/intr.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver/intr.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/trap/trap.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap/trap.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap/trap.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/mm/pmm.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/pmm.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/pmm.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/mm/swap_fifo.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/swap_fifo.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/swap_fifo.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/mm/vmm.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/vmm.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/vmm.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/mm/kmalloc.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/kmalloc.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/kmalloc.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/mm/swap.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/swap.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/swap.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/mm/default_pmm.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/default_pmm.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm/default_pmm.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/fs/swapfs.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs/swapfs.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs/swapfs.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/process/proc.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process/proc.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process/proc.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/schedule/sched.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule/sched.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule/sched.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/schedule/default_sched.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule/default_sched.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule/default_sched.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/debug -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/driver -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/trap -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/mm -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/sync -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/fs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/process -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/schedule -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall -o obj/kern/syscall/syscall.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall/syscall.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/kern/syscall/syscall.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -o obj/libs/string.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/string.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/string.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -o obj/libs/printfmt.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/printfmt.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/printfmt.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -o obj/libs/hash.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/hash.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/hash.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -o obj/libs/rand.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/rand.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs/rand.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/divzero.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/divzero.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/divzero.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/libs/panic.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/panic.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/panic.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/libs/syscall.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/syscall.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/syscall.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/libs/ulib.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/ulib.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/ulib.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/libs/stdio.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/stdio.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/stdio.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/libs/umain.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/umain.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs/umain.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/badarg.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/badarg.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/badarg.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/forktree.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/forktree.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/forktree.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/faultread.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/faultread.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/faultread.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/pgdir.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/pgdir.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/pgdir.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/exit.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/exit.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/exit.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/priority.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/priority.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/priority.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/hello.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/hello.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/hello.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/waitkill.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/waitkill.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/waitkill.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/softint.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/softint.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/softint.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/spin.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/spin.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/spin.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/yield.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/yield.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/yield.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/badsegment.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/badsegment.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/badsegment.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/testbss.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/testbss.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/testbss.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/faultreadkernel.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/faultreadkernel.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/faultreadkernel.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/forktest.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/forktest.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/forktest.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/include -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/libs -o obj/user/matrix.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/matrix.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/user/matrix.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/boot -fno-builtin -Wall -g -m32 -mno-sse -nostdinc -fno-stack-protector -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/libs -Os -nostdinc -o obj/boot/bootmain.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/boot/bootmain.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/boot/bootmain.c"
+    },
+    {
+        "command": "cc -c -I/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/tools -g -Wall -O2 -o obj/sign/tools/sign.o /home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/tools/sign.c",
+        "directory": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6",
+        "file": "/home/jianengxi/share/projects/c_projects/os_lab/labcodes/lab6/tools/sign.c"
+    }
+]

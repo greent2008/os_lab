@@ -5,7 +5,7 @@
 
 /* In the first fit algorithm, the allocator keeps a list of free blocks (known as the free list) and,
    on receiving a request for memory, scans along the list for the first block that is large enough to
-   satisfy the request. If the chosen block is significantly larger than that requested, then it is 
+   satisfy the request. If the chosen block is significantly larger than that requested, then it is
    usually split, and the remainder added to the list as another free block.
    Please see Page 196~198, Section 8.2 of Yan Wei Min's chinese book "Data Structure -- C programming language"
 */
@@ -67,7 +67,7 @@ default_init(void) {
 
 static void
 default_init_memmap(struct Page *base, size_t n) {
-	assert(n > 0);
+    assert(n > 0);
     struct Page *p =base;
     for (; p != base + n; p++) {
         ClearPageReserved(p);
@@ -127,9 +127,9 @@ default_alloc_pages(size_t n) {
 
 static void
 default_free_pages(struct Page *base, size_t n) {
-	assert(n > 0);
+    assert(n > 0);
     struct Page* page = base;
-    for (;page != base + n; page++) {
+    for (; page != base + n; page++) {
         ClearPageReserved(page);
         ClearPageProperty(page);
         page->property = 0;
@@ -153,7 +153,7 @@ default_free_pages(struct Page *base, size_t n) {
     }
     if (le == &free_list) {
         le = le->prev;
-        struct Page *pre = le2page(le,page_link); 
+        struct Page *pre = le2page(le,page_link);
         if (pre + pre->property == base) {
             pre->property += base->property;
         }
@@ -198,7 +198,7 @@ default_free_pages(struct Page *base, size_t n) {
             base->property = n;
             SetPageProperty(base);
             list_add_before(le, &(base->page_link));
-        }   
+        }
         if (pre_page + pre_page->property == base) {
             pre_page->property += base->property;
             list_del(&(base->page_link));
@@ -266,7 +266,7 @@ basic_check(void) {
     free_page(p2);
 }
 
-// LAB2: below code is used to check the first fit allocation algorithm (your EXERCISE 1) 
+// LAB2: below code is used to check the first fit allocation algorithm (your EXERCISE 1)
 // NOTICE: You SHOULD NOT CHANGE basic_check, default_check functions!
 static void
 default_check(void) {

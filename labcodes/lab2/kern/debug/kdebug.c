@@ -15,11 +15,11 @@ extern const struct stab __STAB_END__[];    // end of stabs table
 extern const char __STABSTR_BEGIN__[];      // beginning of string table
 extern const char __STABSTR_END__[];        // end of string table
 /*added by jianengxi c_frame struct*/
-typedef struct c_frame{
+typedef struct c_frame {
     uint32_t pre_ebp;
     uint32_t eip;
     int args[4];
-}c_frame;
+} c_frame;
 
 
 /* debug information about a particular instruction pointer */
@@ -75,7 +75,7 @@ struct eipdebuginfo {
  * */
 static void
 stab_binsearch(const struct stab *stabs, int *region_left, int *region_right,
-           int type, uintptr_t addr) {
+               int type, uintptr_t addr) {
     int l = *region_left, r = *region_right, any_matches = 0;
 
     while (l <= r) {
@@ -199,8 +199,8 @@ debuginfo_eip(uintptr_t addr, struct eipdebuginfo *info) {
     // can interpolate code from a different file!
     // Such included source files use the N_SOL stab type.
     while (lline >= lfile
-           && stabs[lline].n_type != N_SOL
-           && (stabs[lline].n_type != N_SO || !stabs[lline].n_value)) {
+            && stabs[lline].n_type != N_SOL
+            && (stabs[lline].n_type != N_SO || !stabs[lline].n_value)) {
         lline --;
     }
     if (lline >= lfile && stabs[lline].n_strx < stabstr_end - stabstr) {
@@ -211,8 +211,8 @@ debuginfo_eip(uintptr_t addr, struct eipdebuginfo *info) {
     // or 0 if there was no containing function.
     if (lfun < rfun) {
         for (lline = lfun + 1;
-             lline < rfun && stabs[lline].n_type == N_PSYM;
-             lline ++) {
+                lline < rfun && stabs[lline].n_type == N_PSYM;
+                lline ++) {
             info->eip_fn_narg ++;
         }
     }
@@ -300,26 +300,27 @@ read_eip(void) {
  * */
 void
 print_stackframe(void) {
-     /* LAB1 YOUR CODE : STEP 1 */
-     /* (1) call read_ebp() to get the value of ebp. the type is (uint32_t);
-      * (2) call read_eip() to get the value of eip. the type is (uint32_t);
-      * (3) from 0 .. STACKFRAME_DEPTH
-      *    (3.1) printf value of ebp, eip
-      *    (3.2) (uint32_t)calling arguments [0..4] = the contents in address (unit32_t)ebp +2 [0..4]
-      *    (3.3) cprintf("\n");
-      *    (3.4) call print_debuginfo(eip-1) to print the C calling function name and line number, etc.
-      *    (3.5) popup a calling stackframe
-      *           NOTICE: the calling funciton's return addr eip  = ss:[ebp+4]
-      *                   the calling funciton's ebp = ss:[ebp]
-      */
+    /* LAB1 YOUR CODE : STEP 1 */
+    /* (1) call read_ebp() to get the value of ebp. the type is (uint32_t);
+     * (2) call read_eip() to get the value of eip. the type is (uint32_t);
+     * (3) from 0 .. STACKFRAME_DEPTH
+     *    (3.1) printf value of ebp, eip
+     *    (3.2) (uint32_t)calling arguments [0..4] = the contents in address (unit32_t)ebp +2 [0..4]
+     *    (3.3) cprintf("\n");
+     *    (3.4) call print_debuginfo(eip-1) to print the C calling function name and line number, etc.
+     *    (3.5) popup a calling stackframe
+     *           NOTICE: the calling funciton's return addr eip  = ss:[ebp+4]
+     *                   the calling funciton's ebp = ss:[ebp]
+     */
     uint32_t eip = read_eip();
     c_frame* fp;
     fp = (c_frame *)read_ebp();
     int i;
-    for (i = 0; i < STACKFRAME_DEPTH && fp!= 0; i++){
+    for (i = 0; i < STACKFRAME_DEPTH && fp!= 0; i++) {
         cprintf("ebp:0x%08x eip:0x%08x args:0x%08x 0x%08x "\
                 "0x%08x 0x%08x", (uint32_t)fp, eip, fp->args[0],fp->args[1], \
-                fp->args[2], fp->args[3]);cprintf("\n");
+                fp->args[2], fp->args[3]);
+        cprintf("\n");
         print_debuginfo(eip-1);
         eip = fp->eip;
         fp = (c_frame *)fp->pre_ebp;

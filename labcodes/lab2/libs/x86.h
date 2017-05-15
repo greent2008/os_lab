@@ -103,12 +103,24 @@ static inline uint32_t
 read_dr(unsigned regnum) {
     uint32_t value = 0;
     switch (regnum) {
-    case 0: asm volatile ("movl %%db0, %0" : "=r" (value)); break;
-    case 1: asm volatile ("movl %%db1, %0" : "=r" (value)); break;
-    case 2: asm volatile ("movl %%db2, %0" : "=r" (value)); break;
-    case 3: asm volatile ("movl %%db3, %0" : "=r" (value)); break;
-    case 6: asm volatile ("movl %%db6, %0" : "=r" (value)); break;
-    case 7: asm volatile ("movl %%db7, %0" : "=r" (value)); break;
+    case 0:
+        asm volatile ("movl %%db0, %0" : "=r" (value));
+        break;
+    case 1:
+        asm volatile ("movl %%db1, %0" : "=r" (value));
+        break;
+    case 2:
+        asm volatile ("movl %%db2, %0" : "=r" (value));
+        break;
+    case 3:
+        asm volatile ("movl %%db3, %0" : "=r" (value));
+        break;
+    case 6:
+        asm volatile ("movl %%db6, %0" : "=r" (value));
+        break;
+    case 7:
+        asm volatile ("movl %%db7, %0" : "=r" (value));
+        break;
     }
     return value;
 }
@@ -116,12 +128,24 @@ read_dr(unsigned regnum) {
 static void
 write_dr(unsigned regnum, uint32_t value) {
     switch (regnum) {
-    case 0: asm volatile ("movl %0, %%db0" :: "r" (value)); break;
-    case 1: asm volatile ("movl %0, %%db1" :: "r" (value)); break;
-    case 2: asm volatile ("movl %0, %%db2" :: "r" (value)); break;
-    case 3: asm volatile ("movl %0, %%db3" :: "r" (value)); break;
-    case 6: asm volatile ("movl %0, %%db6" :: "r" (value)); break;
-    case 7: asm volatile ("movl %0, %%db7" :: "r" (value)); break;
+    case 0:
+        asm volatile ("movl %0, %%db0" :: "r" (value));
+        break;
+    case 1:
+        asm volatile ("movl %0, %%db1" :: "r" (value));
+        break;
+    case 2:
+        asm volatile ("movl %0, %%db2" :: "r" (value));
+        break;
+    case 3:
+        asm volatile ("movl %0, %%db3" :: "r" (value));
+        break;
+    case 6:
+        asm volatile ("movl %0, %%db6" :: "r" (value));
+        break;
+    case 7:
+        asm volatile ("movl %0, %%db7" :: "r" (value));
+        break;
     }
 }
 

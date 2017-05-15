@@ -17,6 +17,13 @@ extern const struct stab __STAB_BEGIN__[];  // beginning of stabs table
 extern const struct stab __STAB_END__[];    // end of stabs table
 extern const char __STABSTR_BEGIN__[];      // beginning of string table
 extern const char __STABSTR_END__[];        // end of string table
+/*added by jianengxi c_frame struct*/
+typedef struct c_frame{
+    uint32_t pre_ebp;
+    uint32_t eip;
+    int args[4];
+}c_frame;
+
 
 /* debug information about a particular instruction pointer */
 struct eipdebuginfo {
@@ -347,5 +354,17 @@ print_stackframe(void) {
       *           NOTICE: the calling funciton's return addr eip  = ss:[ebp+4]
       *                   the calling funciton's ebp = ss:[ebp]
       */
+    uint32_t eip = read_eip();
+    c_frame* fp;
+    fp = (c_frame *)read_ebp();
+    int i;
+    for (i = 0; i < STACKFRAME_DEPTH && fp!= 0; i++){
+        cprintf("ebp:0x%08x eip:0x%08x args:0x%08x 0x%08x "\
+                "0x%08x 0x%08x", (uint32_t)fp, eip, fp->args[0],fp->args[1], \
+                fp->args[2], fp->args[3]);cprintf("\n");
+        print_debuginfo(eip-1);
+        eip = fp->eip;
+        fp = (c_frame *)fp->pre_ebp;
+    }
 }
 

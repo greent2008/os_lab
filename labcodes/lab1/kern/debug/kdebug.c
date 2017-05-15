@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <kdebug.h>
-#include "../../libs/defs.h"
-#include "../../libs/x86.h"
 
 #define STACKFRAME_DEPTH 20
 

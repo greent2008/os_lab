@@ -10,18 +10,21 @@ SECTIONS {
     /* the phy addr of ucore (before ucore enable paging mechanism*/
     . = 0x0100000;
 
-    .text : {
+.text :
+    {
         *(.text .stub .text.* .gnu.linkonce.t.*)
     }
 
     PROVIDE(etext = .); /* Define the 'etext' symbol to this value */
 
-    .rodata : {
+.rodata :
+    {
         *(.rodata .rodata.* .gnu.linkonce.r.*)
     }
 
     /* Include debugging information in kernel memory */
-    .stab : {
+.stab :
+    {
         PROVIDE(__STAB_BEGIN__ = .);
         *(.stab);
         PROVIDE(__STAB_END__ = .);
@@ -29,7 +32,8 @@ SECTIONS {
                    for this section */
     }
 
-    .stabstr : {
+.stabstr :
+    {
         PROVIDE(__STABSTR_BEGIN__ = .);
         *(.stabstr);
         PROVIDE(__STABSTR_END__ = .);
@@ -41,19 +45,22 @@ SECTIONS {
     . = ALIGN(0x1000);
 
     /* The data segment */
-    .data : {
+.data :
+    {
         *(.data)
     }
 
     PROVIDE(edata = .);
 
-    .bss : {
+.bss :
+    {
         *(.bss)
     }
 
     PROVIDE(end = .);
 
-    /DISCARD/ : {
+/DISCARD/ :
+    {
         *(.eh_frame .note.GNU-stack)
     }
 }

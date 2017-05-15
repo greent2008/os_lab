@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="boot">
+        <in>bootmain.c</in>
+      </df>
+      <df name="kern">
+        <df name="debug">
+          <in>kdebug.c</in>
+          <in>kmonitor.c</in>
+          <in>panic.c</in>
+        </df>
+        <df name="driver">
+          <in>clock.c</in>
+          <in>console.c</in>
+          <in>ide.c</in>
+          <in>intr.c</in>
+          <in>picirq.c</in>
+        </df>
+        <df name="fs">
+          <in>swapfs.c</in>
+        </df>
+        <df name="init">
+          <in>init.c</in>
+        </df>
+        <df name="libs">
+          <in>readline.c</in>
+          <in>stdio.c</in>
+        </df>
+        <df name="mm">
+          <in>default_pmm.c</in>
+          <in>pmm.c</in>
+          <in>swap.c</in>
+          <in>swap_fifo.c</in>
+          <in>vmm.c</in>
+        </df>
+        <df name="trap">
+          <in>trap.c</in>
+        </df>
+      </df>
+      <df name="libs">
+        <in>printfmt.c</in>
+        <in>rand.c</in>
+        <in>string.c</in>
+      </df>
+      <df name="tools">
+        <in>sign.c</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-g -O2"/>
+        <element flagsID="1" commonFlags="-ggdb -m32"/>
+        <element flagsID="2" commonFlags="-ggdb -m32 -Os"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="boot/bootmain.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
+      </item>
+      <folder path="0/boot">
+        <cTool>
+          <incDir>
+            <pElem>boot</pElem>
+            <pElem>libs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/debug">
+        <cTool>
+          <incDir>
+            <pElem>kern/debug</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/driver</pElem>
+            <pElem>kern/trap</pElem>
+            <pElem>kern/mm</pElem>
+            <pElem>kern/libs</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>kern/fs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/driver">
+        <cTool>
+          <incDir>
+            <pElem>kern/driver</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/debug</pElem>
+            <pElem>kern/trap</pElem>
+            <pElem>kern/mm</pElem>
+            <pElem>kern/libs</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>kern/fs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/fs">
+        <cTool>
+          <incDir>
+            <pElem>kern/fs</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/debug</pElem>
+            <pElem>kern/driver</pElem>
+            <pElem>kern/trap</pElem>
+            <pElem>kern/mm</pElem>
+            <pElem>kern/libs</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/init">
+        <cTool>
+          <incDir>
+            <pElem>kern/init</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/debug</pElem>
+            <pElem>kern/driver</pElem>
+            <pElem>kern/trap</pElem>
+            <pElem>kern/mm</pElem>
+            <pElem>kern/libs</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>kern/fs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/libs">
+        <cTool>
+          <incDir>
+            <pElem>kern/libs</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/debug</pElem>
+            <pElem>kern/driver</pElem>
+            <pElem>kern/trap</pElem>
+            <pElem>kern/mm</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>kern/fs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/mm">
+        <cTool>
+          <incDir>
+            <pElem>kern/mm</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/debug</pElem>
+            <pElem>kern/driver</pElem>
+            <pElem>kern/trap</pElem>
+            <pElem>kern/libs</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>kern/fs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/kern/trap">
+        <cTool>
+          <incDir>
+            <pElem>kern/trap</pElem>
+            <pElem>libs</pElem>
+            <pElem>kern/debug</pElem>
+            <pElem>kern/driver</pElem>
+            <pElem>kern/mm</pElem>
+            <pElem>kern/libs</pElem>
+            <pElem>kern/sync</pElem>
+            <pElem>kern/fs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/libs">
+        <cTool>
+          <incDir>
+            <pElem>libs</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/tools">
+        <cTool>
+          <incDir>
+            <pElem>tools</pElem>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="kern/debug/kdebug.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/debug/kmonitor.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/debug/panic.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/driver/clock.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/driver/console.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/driver/ide.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/driver/intr.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/driver/picirq.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/fs/swapfs.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/init/init.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/libs/readline.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/libs/stdio.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/mm/default_pmm.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/mm/pmm.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/mm/swap.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/mm/swap_fifo.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/mm/vmm.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="kern/trap/trap.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="libs/printfmt.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="libs/rand.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="libs/string.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+      <item path="tools/sign.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="0">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

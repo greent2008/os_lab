@@ -35,7 +35,7 @@ static const char * const error_string[MAXERROR + 1] = {
  * */
 static void
 printnum(void (*putch)(int, void*), void *putdat,
-        unsigned long long num, unsigned base, int width, int padc) {
+         unsigned long long num, unsigned base, int width, int padc) {
     unsigned long long result = num;
     unsigned mod = do_div(result, base);
 
@@ -133,7 +133,7 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap) 
         width = precision = -1;
         lflag = altflag = 0;
 
-    reswitch:
+reswitch:
         switch (ch = *(unsigned char *)fmt ++) {
 
         // flag to pad on the right
@@ -170,7 +170,7 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap) 
             altflag = 1;
             goto reswitch;
 
-        process_precision:
+process_precision:
             if (width < 0)
                 width = precision, precision = -1;
             goto reswitch;
@@ -256,7 +256,7 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap) 
         case 'x':
             num = getuint(&ap, lflag);
             base = 16;
-        number:
+number:
             printnum(putch, putdat, num, base, width, padc);
             break;
 
