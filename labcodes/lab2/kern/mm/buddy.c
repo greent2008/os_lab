@@ -20,8 +20,8 @@ static size_t buddy_virtual_size;       // 虚拟分配内存大小
 static size_t buddy_segment_size;       // 节点信息区大小
 static size_t buddy_alloc_size;         // 实际分配内存大小
 static size_t *buddy_segment;           // 节点信息区
-static struct Page *buddy_physical;     // 实际内存起始地址
-static struct Page *buddy_alloc;        // 分配内存起始地址
+static struct Page *buddy_physical;     // 实际内存页数据结构起始地址
+static struct Page *buddy_alloc;        // 分配内存页数据结构起始地址
 
 #define MIN(a,b) ((a)<(b)?(a):(b))
 
@@ -133,6 +133,11 @@ buddy_alloc_pages(size_t n) {
         if (BUDDY_EMPTY(block)) {
             size_t begin = BUDDY_BEGIN(block);
             size_t end = BUDDY_END(block);
+            size_t mid = (begin+end)>>1;
+            list_del(&(buddy_alloc[begin].page_link));
+            buddy_alloc[begin].property >>= 1;
+            buddy_alloc[mid].property = buddy_alloc[begin].property;
+            
         }
 
     }
