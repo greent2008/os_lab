@@ -15,13 +15,13 @@ free_area_t free_area;
 #define nr_free (free_area.nr_free)
 
 // Global block
-static size_t buddy_physical_size;
-static size_t buddy_virtual_size;
-static size_t buddy_segment_size;
-static size_t buddy_alloc_size;
-static size_t *buddy_segment;
-static struct Page *buddy_physical;
-static struct Page *buddy_alloc;
+static size_t buddy_physical_size;      // 实际物理内存大小
+static size_t buddy_virtual_size;       // 虚拟分配内存大小
+static size_t buddy_segment_size;       // 节点信息区大小
+static size_t buddy_alloc_size;         // 实际分配内存大小
+static size_t *buddy_segment;           // 节点信息区
+static struct Page *buddy_physical;     // 实际内存起始地址
+static struct Page *buddy_alloc;        // 分配内存起始地址
 
 #define MIN(a,b) ((a)<(b)?(a):(b))
 
@@ -40,8 +40,8 @@ static struct Page *buddy_alloc;
 #define BUDDY_LENGTH(a)       (buddy_virtual_size/UINT32_ROUND_DOWN(a))         // 虚拟分配空间第几个block的大小
 #define BUDDY_BEGIN(a)        (UINT32_REMAINDER(a)*BUDDY_LENGTH(a))             // 虚拟分配空间第几个block的起始位置
 #define BUDDY_END(a)          ((UINT32_REMAINDER(a)+1)*BUDDY_LENGTH(a))         // 虚拟分配空间第几个block的结束位置
-#define BUDDY_BLOCK(a,b)      (buddy_virtual_size/((b)-(a))+(a)/((b)-(a)))      
-#define BUDDY_EMPTY(a)        (buddy_segment[(a)] == BUDDY_LENGTH(a))
+#define BUDDY_BLOCK(b,e)      (buddy_virtual_size/((e)-(b))+(b)/((e)-(b)))      // 虚拟分配出的空间[begin,end]的起始block位置 
+#define BUDDY_EMPTY(a)        (buddy_segment[(a)] == BUDDY_LENGTH(a))           // 节点信息区第几个节点的值等于节点所代表的大小时节点为空
 
 static void
 buddy_init_size(size_t n) {
